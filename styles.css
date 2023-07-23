@@ -17,7 +17,7 @@
   max-width: 100%;
   height: auto;
   position: relative;
-  padding-bottom: 70%;
+  padding-bottom: 45%;
   box-sizing: border-box;
 }
 
@@ -70,10 +70,52 @@
   animation: image-loop 9s infinite;
   animation-delay: 6s;
 }
+
 .image-container img:nth-child(4) {
   animation: image-loop 9s infinite;
   animation-delay: 9s;
 }
+
+/* animation texte banniere */
+
+.text-container {
+  text-align: center;
+}
+
+.text-container div {
+  padding-bottom: 25%;
+  background-colo: aquamarine;
+}
+
+.animated-text {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.vertical-line {
+  width: 5px;
+  height: 140px;
+  background: red;
+  margin-right: 20px;
+  text-align: center;
+}
+
+/* page contact */
+
+/* .bg-contact {
+  background: url(/img5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
 
 /* resposive  */
 @media screen and (min-width: 425px) {
@@ -83,6 +125,15 @@
 }
 @media screen and (max-width: 425px) {
 }
+
+@media screen and (min-width: 768px) {
+  .bg-contact {
+    background: url(/img5.jpg);
+    background-size: cover;
+    margin-right: -300px;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .nav-item {
     padding-left: 40px;

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Education Pour Tous</title>
+    <!-- icones font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- cdn boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- styles css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-light">
+    <header style="margin-bottom: 10%">
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <nav
+              class="navbar bg-dark-subtle navbar-expand-lg position-fixed z-3 bg-body-tertiary"
+            >
+              <div class="container-fluid">
+                <a
+                  class="navbar-brand pt-0 fst-italic fs-5"
+                  href="index.html"
+                  style="font-weight: 700"
+                  ><span class="fs-1 text-success">E</span>ducation Pour Tous</a
+                >
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  style="width: 70%"
+                  class="offcanvas offcanvas-end d-flex flex-row-reverse"
+                  id="navbarSupportedContent"
+                >
+                  <div class="offcanvas-header mt-3" style="height: 30px">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active fw-semibold"
+                          aria-current="page"
+                          href="index.html"
+                          >Accueil</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active text-nowrap fw-semibold"
+                          href="qui_sommes_nous.html"
+                          >Qui sommes-nous ?</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active text-nowrap fw-semibold"
+                          href="nous_contacter.html"
+                          >Nous contacter</a
+                        >
+                      </li>
+                    </ul>
+                    <a
+                      class="btn btn-success btn-navbar"
+                      href="fair-un-don.html"
+                    >
+                      Fair un don
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container"></div>
+      </section>
+    </header>
+    <main class="">
+      <section class="bg-light pt-5 pb-5">
+        <div class="container" style="padding-left: 30px">
+          <div class="pb-5 m-auto">
+            <h5 style="margin-left: -12px">
+              Contactez <strong>Ecole Pour Tous</strong> via le formulaire
+            </h5>
+          </div>
+          <div class="row">
+            <div
+              class="card col-10 col-sm-8 col-md-6 col-lg-6 rounded-0 p-3 bg-success-subtle"
+            >
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4 position-relative">
+                  <label for="validationTooltip01" class="form-label"
+                    >Prénom</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationTooltip01"
+                    placeholder="Prénom"
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                </div>
+                <div class="col-md-4 position-relative">
+                  <label for="validationTooltip02" class="form-label"
+                    >Nom</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationTooltip02"
+                    placeholder="Nom"
+                    required
+                  />
+                  <div class="valid-tooltip">Looks good!</div>
+                </div>
+                <div class="col-md-4 position-relative">
+                  <label for="validationTooltip03" class="form-label"
+                    >Ville</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationTooltip03"
+                    placeholder="Ville"
+                    required
+                  />
+                  <div class="invalid-tooltip">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <div class="col-md-6 position-relative">
+                  <label for="validationTooltipUsername" class="form-label"
+                    >Mail</label
+                  >
+
+                  <div class="input-group has-validation">
+                    <span
+                      class="input-group-text"
+                      id="validationTooltipUsernamePrepend"
+                      >@</span
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationTooltipUsername"
+                      placeholder="nom@exemple.com"
+                      aria-describedby="validationTooltipUsernamePrepend"
+                      required
+                    />
+                    <div class="invalid-tooltip">
+                      Please choose a unique and valid username.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 position-relative">
+                  <label for="validationTooltip04" class="form-label"
+                    >Sujet</label
+                  >
+                  <select class="form-select" id="validationTooltip04" required>
+                    <option selected>Sélection</option>
+                    <option value="1">Je veux faire un don</option>
+                    <option value="2">A propos de l'association</option>
+                    <option value="3">Je veux dévenir bénévol</option>
+                    <option value="4">Autres</option>
+                  </select>
+                  <div class="invalid-tooltip">
+                    Please select a valid state.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Texte</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    placeholder="Entrer votre texte"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="invalidCheck"
+                      required
+                    />
+                    <label class="form-check-label" for="invalidCheck">
+                      Accepter les termes et conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      Vous devez accepter avant de soumettre.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary" type="submit">
+                    Envoyer
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="bg-contact bg-warning">
+              <div class="bg-contact">
+                <!-- <img class="img-fluid" src="/img5.jpg" alt="" />  -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="bg-light pt-4" style="margin-top: 80px">
+        <div class="container-fluid">
+          <div class="row">
+            <hr />
+            <div class="col-sm-6 col-md-5">
+              <h5>Contact</h5>
+              <div class="">
+                <address>
+                  <span><strong>Education Pour Tous</strong></span
+                  ><br />
+                  <span>0033 0 00 00 00 00</span><br />
+                  <span>00 Rue adress</span><br />
+                  <span>Marseille 13003 (France)</span>
+                </address>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-7">
+              <h5>Nos réseaux sociaux</h5>
+              <div class="content-social-media">
+                <a
+                  class="fa-brands text-info fa-linkedin fa-2x m-2"
+                  title="LinkedIn"
+                  href="http://"
+                ></a>
+                <a
+                  class="fa-brands fa-facebook-square fa-2x m-2"
+                  title="Facebook"
+                  href="#"
+                ></a>
+                <a
+                  class="fa-brands text-danger fa-instagram-square fa-2x m-2"
+                  title="Instagram"
+                  href="http://"
+                ></a>
+                <a
+                  class="fa-brands text-info fa-twitter-square fa-2x m-2"
+                  title="Twitter"
+                  href="http://"
+                ></a>
+              </div>
+              <div class="pt-2 content-copirigtht" style="font-size: 5px">
+                <p>
+                  &copy; 2023 educationpourtous. Tous droits réservés.
+                  <a class="" href="http://">Politique de confidentialité</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
