@@ -27,6 +27,116 @@
       <section>
         <div class="container-fluid">
           <div class="row">
+            <nav class="navbar navbar-expand-lg position-fixed z-3">
+              <div class="container-fluid">
+                <a
+                  class="navbar-brand pt-0 fst-italic fs-5"
+                  href="index.html"
+                  style="font-weight: 700"
+                  ><span class="text-success title-mobile-E">E</span
+                  ><span class="title-mobile">ducation Pour Tous</span></a
+                >
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  style="width: 70%"
+                  class="offcanvas offcanvas-end d-flex flex-row-reverse"
+                  id="navbarSupportedContent"
+                >
+                  <div class="offcanvas-header mt-3" style="height: 30px">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body bg-success-subtle rounded">
+                    <ul class="navbar-nav me-auto navbar-mobile mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active fw-semibold"
+                          aria-current="page"
+                          href="index.html"
+                          >Accueil</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active text-nowrap fw-semibold"
+                          href="qui_sommes_nous.html"
+                          >Qui sommes-nous ?</a
+                        >
+                      </li>
+                      <li class="nav-item li-active">
+                        <a
+                          class="nav-link active text-nowrap fw-semibold"
+                          href="/nous_contacter.html"
+                          >Nous contacter</a
+                        >
+                      </li>
+                    </ul>
+                    <a
+                      class="btn btn-outline-warning text-dark fw-bold btn-navbar"
+                      href="fair-un-don.html"
+                    >
+                      Fair un don
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container"></div>
+      </section>
+
+      <!-- <section>
+        <div class="">
+          <div class="">
+            <div class="image-container z-2">
+              <img class="" src="img7.jpg" alt="Image 1" />
+              <img class="" src="img1.jpg" alt="Image 2" />
+              <img class="" src="img4.jpg" alt="Image 3" />
+              <img class="" src="img2.jpg" alt="Image 3" />
+              <span class="text-container overflow-hidden">
+                <div class=""></div>
+                <p
+                  class="animated-text animated-text-first bg-info w-50 m-auto"
+                >
+                  EducationPourTous
+                </p>
+                <p
+                  class="animated-text animated-text-second bg-warning w-50 m-auto"
+                >
+                  ÉducationÉquitable
+                </p>
+                <p
+                  class="animated-text animated-text-third bg-success w-50 m-auto"
+                >
+                  EnfantsDuFutur
+                </p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </header>
+    <!-- <header style="margin-bottom: 10%">
+      <section>
+        <div class="container-fluid">
+          <div class="row">
             <nav
               class="navbar bg-dark-subtle navbar-expand-lg position-fixed z-3 bg-body-tertiary"
             >
@@ -102,7 +212,7 @@
       <section>
         <div class="container"></div>
       </section>
-    </header>
+    </header> -->
     <main class="">
       <section class="bg-light pt-5 pb-5">
         <div class="container" style="padding-left: 30px">
@@ -115,7 +225,7 @@
             <div
               class="card col-10 col-sm-8 col-md-6 col-lg-6 rounded-0 p-3 bg-success-subtle"
             >
-              <form class="row g-3 needs-validation" novalidate>
+              <form class="row g-3 form">
                 <div class="col-md-4 position-relative">
                   <label for="validationTooltip01" class="form-label"
                     >Prénom</label
@@ -127,7 +237,6 @@
                     placeholder="Prénom"
                     required
                   />
-                  <div class="valid-feedback">Looks good!</div>
                 </div>
                 <div class="col-md-4 position-relative">
                   <label for="validationTooltip02" class="form-label"
@@ -225,7 +334,7 @@
                   </div>
                 </div>
                 <div class="col-12">
-                  <button class="btn btn-sm btn-primary" type="submit">
+                  <button class="btn btn-sm btn-warning" type="submit">
                     Envoyer
                   </button>
                 </div>
@@ -244,8 +353,145 @@
       <section class="bg-light pt-4" style="margin-top: 80px">
         <div class="container-fluid">
           <div class="row">
-            <hr />
-            <div class="col-sm-6 col-md-5">
+            <div
+              class="col-sm-6 my-auto p-3 justify-content-center d-flex col-md-4"
+            >
+              <div class="me-2">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-outline-warning text-dark fw-bold"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  S'engager
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="staticBackdrop"
+                  data-bs-backdrop="static"
+                  data-bs-keyboard="false"
+                  tabindex="-1"
+                  aria-labelledby="staticBackdropLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header bg-success-subtle">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                          Inscription à notre association
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <form action="/traitement_inscription" method="POST">
+                          <div class="form-group col-md-10 m-auto pb-3">
+                            <label for="nom">Nom :</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="nom"
+                              name="nom"
+                              required
+                            />
+                          </div>
+                          <div class="form-group col-md-10 m-auto pb-3">
+                            <label for="Prénom">Prénom :</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="Prénom"
+                              name="Prénom"
+                              required
+                            />
+                          </div>
+
+                          <div class="form-group col-md-10 m-auto pb-3">
+                            <label for="email">Email :</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="email"
+                              name="email"
+                              required
+                            />
+                          </div>
+
+                          <div class="form-group col-md-10 m-auto pb-3">
+                            <label for="telephone">Téléphone :</label>
+                            <input
+                              type="tel"
+                              class="form-control"
+                              id="telephone"
+                              name="telephone"
+                              required
+                            />
+                          </div>
+
+                          <div class="form-group col-md-10 m-auto pb-3">
+                            <label for="adresse">Adresse :</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="adresse"
+                              name="adresse"
+                              required
+                            />
+                          </div>
+
+                          <div class="form-group col-md-10 m-auto pb-3">
+                            <label for="ville">Ville :</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="ville"
+                              name="ville"
+                              required
+                            />
+                          </div>
+
+                          <div class="form-group col-md-10 m-auto pb-3">
+                            <label for="code_postal">Code Postal :</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="code_postal"
+                              name="code_postal"
+                              required
+                            />
+                          </div>
+                          <div class="m-1 text-end">
+                            <button
+                              type="button"
+                              class="btn btn-success fs-6 btn-sm mt-2"
+                              data-bs-dismiss="modal"
+                            >
+                              S'inscrire
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <a
+                  class="btn btn-outline-success fw-semibold btn-navbar"
+                  href="fair-un-don.html"
+                >
+                  Fair un don
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
               <h5>Contact</h5>
               <div class="">
                 <address>
@@ -257,7 +503,7 @@
                 </address>
               </div>
             </div>
-            <div class="col-sm-6 col-md-7">
+            <div class="col-sm-6 col-md-4">
               <h5>Nos réseaux sociaux</h5>
               <div class="content-social-media">
                 <a

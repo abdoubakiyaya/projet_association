@@ -27,15 +27,14 @@
       <section>
         <div class="container-fluid">
           <div class="row">
-            <nav
-              class="navbar bg-dark-subtle navbar-expand-lg position-fixed z-3 bg-body-tertiary"
-            >
+            <nav class="navbar navbar-expand-lg position-fixed z-3">
               <div class="container-fluid">
                 <a
                   class="navbar-brand pt-0 fst-italic fs-5"
                   href="index.html"
                   style="font-weight: 700"
-                  ><span class="fs-1 text-success">E</span>ducation Pour Tous</a
+                  ><span class="text-success title-mobile-E">E</span
+                  ><span class="title-mobile">ducation Pour Tous</span></a
                 >
                 <button
                   class="navbar-toggler"
@@ -61,9 +60,9 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="offcanvas-body">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
+                  <div class="offcanvas-body bg-success-subtle rounded">
+                    <ul class="navbar-nav me-auto navbar-mobile mb-2 mb-lg-0">
+                      <li class="nav-item li-active">
                         <a
                           class="nav-link active fw-semibold"
                           aria-current="page"
@@ -87,7 +86,7 @@
                       </li>
                     </ul>
                     <a
-                      class="btn btn-success btn-navbar"
+                      class="btn btn-outline-warning text-dark fw-bold btn-navbar"
                       href="fair-un-don.html"
                     >
                       Fair un don
@@ -111,14 +110,22 @@
               <img class="" src="img1.jpg" alt="Image 2" />
               <img class="" src="img4.jpg" alt="Image 3" />
               <img class="" src="img2.jpg" alt="Image 3" />
-              <span class="text-container">
+              <span class="text-container overflow-hidden">
                 <div class=""></div>
-                <p class="animated-text bg-info w-50 m-auto">Premier texte</p>
-                <p class="animated-text bg-warning w-50 m-auto">
-                  Deuxième texte
+                <p
+                  class="animated-text animated-text-first bg-info w-50 m-auto"
+                >
+                  EducationPourTous
                 </p>
-                <p class="animated-text bg-success w-50 m-auto">
-                  Troisieme texte
+                <p
+                  class="animated-text animated-text-second bg-warning w-50 m-auto"
+                >
+                  ÉducationÉquitable
+                </p>
+                <p
+                  class="animated-text animated-text-third bg-success w-50 m-auto"
+                >
+                  EnfantsDuFutur
                 </p>
               </span>
             </div>
@@ -161,44 +168,34 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img
-                    src="/img6.jpg"
-                    class="d-block w-100 img-fluid"
-                    alt="..."
+                    src="/img_lecture.jpg"
+                    class="d-block w-100 img-fluid card"
+                    alt="image lecture"
                   />
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>
-                      Some representative placeholder content for the first
-                      slide.
-                    </p>
+                    <h5 class="fw-bold text-dark bg-warning">
+                      Fête de la Lecture
+                    </h5>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img
-                    src="/img8.jpg"
-                    class="d-block w-100 img-fluid"
-                    alt="..."
+                    src="/img_enigme.jpg"
+                    class="d-block w-100 img-fluid card"
+                    alt="image resolution d'enigme"
                   />
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>
-                      Some representative placeholder content for the second
-                      slide.
-                    </p>
+                    <h5 class="fw-bold bg-info">Chasse au Trésor Éducative</h5>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img
-                    src="/img2.jpg"
-                    class="d-block w-100 img-fluid"
-                    alt="..."
+                    src="/img_decouverte.jpg"
+                    class="d-block w-100 img-fluid card"
+                    alt="image découverte"
                   />
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>
-                      Some representative placeholder content for the third
-                      slide.
-                    </p>
+                    <h5 class="fw-bold bg-success">Journée de la Découverte</h5>
                   </div>
                 </div>
               </div>
@@ -229,7 +226,7 @@
             </div>
             <div class="col-md-6">
               <div class="card-body">
-                <h5 class="card-title m-1">
+                <h5 class="card-title fw-bold text-danger m-1">
                   Ensemble, construisons un avenir meilleur grâce à l'éducation
                   !
                 </h5>
@@ -261,9 +258,10 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
                 <div class="card rounded-0 h-100">
-                  <!-- <img src="..." class="card-img-top" alt="..." /> -->
                   <div class="card-body">
-                    <h5 class="card-title">Journée de la Découverte</h5>
+                    <h5 class="card-title text-danger fw-bold">
+                      Journée de la Découverte
+                    </h5>
                     <p class="card-text">
                       La Journée de la Découverte est une journée
                       d'apprentissage ludique et interactif où les enfants
@@ -276,9 +274,9 @@
                       source d'émerveillement et d'apprentissage pour tous !
                     </p>
                   </div>
-                  <div class="card-footer">
+                  <div class="card-footer bg-success-subtle">
                     <small class="text-body-secondary"
-                      >Marseille 05/08/2023</small
+                      >Le 20/09/2023 à Marseille</small
                     >
                   </div>
                 </div>
@@ -286,7 +284,9 @@
               <div class="col">
                 <div class="card rounded-0 h-100">
                   <div class="card-body">
-                    <h5 class="card-title">Fête de la Lecture</h5>
+                    <h5 class="card-title text-danger fw-bold">
+                      Fête de la Lecture
+                    </h5>
                     <p class="card-text">
                       La Fête de la Lecture célèbre le plaisir de la lecture et
                       de l'écriture. Nous accueillerons des auteurs locaux et
@@ -298,9 +298,9 @@
                       à renforcer leurs compétences en littératie.
                     </p>
                   </div>
-                  <div class="card-footer">
+                  <div class="card-footer bg-warning-subtle">
                     <small class="text-body-secondary"
-                      >Last updated 3 mins ago</small
+                      >Lyon, le 30/10/2023</small
                     >
                   </div>
                 </div>
@@ -308,7 +308,7 @@
               <div class="col">
                 <div class="card rounded-0 h-100">
                   <div class="card-body">
-                    <h5 class="card-title">
+                    <h5 class="card-title fw-bold text-danger">
                       Rencontre avec les Métiers du Futur
                     </h5>
                     <p class="card-text">
@@ -322,9 +322,9 @@
                       leur propre parcours professionnel.
                     </p>
                   </div>
-                  <div class="card-footer">
+                  <div class="card-footer bg-success-subtle">
                     <small class="text-body-secondary"
-                      >Last updated 3 mins ago</small
+                      >A vénir le 30/11/2023 à Strabourg</small
                     >
                   </div>
                 </div>
@@ -340,7 +340,9 @@
               <div class="col">
                 <div class="card rounded-0 h-100">
                   <div class="card-body">
-                    <h5 class="card-title">Ateliers d'Art Thérapie</h5>
+                    <h5 class="card-title text-danger fw-bold">
+                      Ateliers d'Art Thérapie
+                    </h5>
                     <p class="card-text">
                       Nos ateliers d'art thérapie visent à utiliser l'expression
                       artistique comme moyen de soutenir le développement
@@ -351,9 +353,9 @@
                       leur résilience.
                     </p>
                   </div>
-                  <div class="card-footer">
+                  <div class="card-footer bg-warning-subtle">
                     <small class="text-body-secondary"
-                      >Last updated 3 mins ago</small
+                      >Le 30/01/2024 à Nantes</small
                     >
                   </div>
                 </div>
@@ -361,7 +363,9 @@
               <div class="col">
                 <div class="card rounded-0 h-100">
                   <div class="card-body">
-                    <h5 class="card-title">Chasse au Trésor Éducative</h5>
+                    <h5 class="card-title text-danger fw-bold">
+                      Chasse au Trésor Éducative
+                    </h5>
                     <p class="card-text">
                       Notre chasse au trésor est une aventure éducative
                       passionnante où les enfants devront résoudre des énigmes,
@@ -372,9 +376,9 @@
                       s'amusant.
                     </p>
                   </div>
-                  <div class="card-footer">
+                  <div class="card-footer bg-success-subtle">
                     <small class="text-body-secondary"
-                      >Last updated 3 mins ago</small
+                      >Le 30/02/2024 à Toulouse</small
                     >
                   </div>
                 </div>
@@ -382,7 +386,9 @@
               <div class="col">
                 <div class="card rounded-0 h-100">
                   <div class="card-body">
-                    <h5 class="card-title">Visite Culturelle</h5>
+                    <h5 class="card-title text-danger fw-bold">
+                      Visite Culturelle
+                    </h5>
                     <p class="card-text">
                       Explorez le monde de l'apprentissage en participant à
                       notre visite culturelle le [date]. Nous visiterons un
@@ -390,9 +396,9 @@
                       pédagogique pour stimuler la curiosité et la découverte.
                     </p>
                   </div>
-                  <div class="card-footer">
+                  <div class="card-footer bg-warning-subtle">
                     <small class="text-body-secondary"
-                      >Last updated 3 mins ago</small
+                      >Le 30/02/2024 à Montpllier</small
                     >
                   </div>
                 </div>
@@ -403,7 +409,7 @@
       </section>
       <section class="pt-5">
         <div class="container d-flex pt-5">
-          <div class="vertical-line m-2"></div>
+          <div class="vertical-line me-4"></div>
           <p class="w-75">
             Ces événements ne sont qu'un aperçu de notre engagement continu
             envers l'éducation des enfants dans les quartiers défavorisés. Nous
@@ -445,7 +451,145 @@
       <section class="bg-light pt-4" style="margin-top: 80px">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-sm-6 col-md-5">
+            <div
+              class="col-sm-6 my-auto p-3 justify-content-center d-flex col-md-4"
+            >
+              <div class="me-2">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-outline-warning text-dark fw-bold"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  S'engager
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="staticBackdrop"
+                  data-bs-backdrop="static"
+                  data-bs-keyboard="false"
+                  tabindex="-1"
+                  aria-labelledby="staticBackdropLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header bg-success-subtle">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                          Inscription à notre association
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <form action="/traitement_inscription" method="POST">
+                          <div class="form-group col-md-10 m-auto pb-3">
+                            <label for="nom">Nom :</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="nom"
+                              name="nom"
+                              required
+                            />
+                          </div>
+                          <div class="form-group col-md-10 m-auto pb-3">
+                            <label for="Prénom">Prénom :</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="Prénom"
+                              name="Prénom"
+                              required
+                            />
+                          </div>
+
+                          <div class="form-group col-md-10 m-auto pb-3">
+                            <label for="email">Email :</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="email"
+                              name="email"
+                              required
+                            />
+                          </div>
+
+                          <div class="form-group col-md-10 m-auto pb-3">
+                            <label for="telephone">Téléphone :</label>
+                            <input
+                              type="tel"
+                              class="form-control"
+                              id="telephone"
+                              name="telephone"
+                              required
+                            />
+                          </div>
+
+                          <div class="form-group col-md-10 m-auto pb-3">
+                            <label for="adresse">Adresse :</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="adresse"
+                              name="adresse"
+                              required
+                            />
+                          </div>
+
+                          <div class="form-group col-md-10 m-auto pb-3">
+                            <label for="ville">Ville :</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="ville"
+                              name="ville"
+                              required
+                            />
+                          </div>
+
+                          <div class="form-group col-md-10 m-auto pb-3">
+                            <label for="code_postal">Code Postal :</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="code_postal"
+                              name="code_postal"
+                              required
+                            />
+                          </div>
+                          <div class="m-1 text-end">
+                            <button
+                              type="button"
+                              class="btn btn-success fs-6 btn-sm mt-2"
+                              data-bs-dismiss="modal"
+                            >
+                              S'inscrire
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <a
+                  class="btn btn-outline-success fw-semibold btn-navbar"
+                  href="fair-un-don.html"
+                >
+                  Fair un don
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
               <h5>Contact</h5>
               <div class="">
                 <address>
@@ -457,7 +601,7 @@
                 </address>
               </div>
             </div>
-            <div class="col-sm-6 col-md-7">
+            <div class="col-sm-6 col-md-4">
               <h5>Nos réseaux sociaux</h5>
               <div class="content-social-media">
                 <a

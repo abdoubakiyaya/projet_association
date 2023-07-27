@@ -12,6 +12,15 @@
   z-index: 99;
 }
 
+.li-active {
+  background-color: #ffc107;
+}
+
+.nav-item:hover {
+  background-color: #ffc107;
+  transition: padding-bottom 0.4s ease-in-out, border-color 0.3s ease;
+}
+
 /* animation banniere  */
 .image-container {
   max-width: 100%;
@@ -80,25 +89,39 @@
 
 .text-container {
   text-align: center;
+  overflow: hidden;
 }
 
 .text-container div {
   padding-bottom: 25%;
-  background-colo: aquamarine;
 }
 
 .animated-text {
-  animation: blink 1s infinite;
+  opacity: 0;
+  position: absolute;
+  animation: fade-in-out 9s infinite;
+  font-weight: bold;
 }
 
-@keyframes blink {
+@keyframes fade-in-out {
   0%,
   100% {
     opacity: 0;
   }
-  50% {
+  16.666%,
+  83.333% {
     opacity: 1;
   }
+}
+
+.animated-text-first {
+  animation-delay: 3s;
+}
+.animated-text-second {
+  animation-delay: 6s;
+}
+.animated-text-third {
+  animation-delay: 9s;
 }
 
 .vertical-line {
@@ -109,21 +132,29 @@
   text-align: center;
 }
 
-/* page contact */
-
-/* .bg-contact {
-  background: url(/img5.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
-
 /* resposive  */
 @media screen and (min-width: 425px) {
   * {
     font-size: 18px;
   }
+  .title-mobile {
+    font-size: 28px;
+    font-weight: bolder;
+  }
+  .title-mobile-E {
+    font-size: 35px;
+  }
 }
+
 @media screen and (max-width: 425px) {
+  .title-mobile {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .title-mobile-E {
+    font-size: 26px;
+  }
+  h1,h2
 }
 
 @media screen and (min-width: 768px) {
@@ -140,5 +171,14 @@
   }
   .btn-navbar {
     margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .navbar-mobile{
+    width: 70%;
+  }
+  .nav-item {
+    padding-left: 15px;
   }
 }
