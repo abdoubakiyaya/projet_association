@@ -2,8 +2,15 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
+    <meta name="author" content="Abdou-baki YAYA" />
+    <meta name="keywords" content="Association, Education, Enfant" />
+    <meta
+      name="description"
+      content="Nous oeuvrons pour l'éducation des enfants dans les quartiers défavorisés"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Education Pour Tous</title>
+    <title>ALLER A L'ECOLE</title>
     <!-- icones font awesome cdn -->
     <link
       rel="stylesheet"
@@ -30,11 +37,11 @@
             <nav class="navbar navbar-expand-lg position-fixed z-3">
               <div class="container-fluid">
                 <a
-                  class="navbar-brand pt-0 fst-italic fs-5"
+                  class="navbar-brand pt-0 fst-italic fs-5 bg-dark-subtle p-2"
                   href="index.html"
                   style="font-weight: 700"
-                  ><span class="text-success title-mobile-E">E</span
-                  ><span class="title-mobile">ducation Pour Tous</span></a
+                  ><span class="text-success title-mobile-E">A</span
+                  ><span class="title-mobile">LLER A L'ECOLE</span></a
                 >
                 <button
                   class="navbar-toggler"
@@ -52,7 +59,10 @@
                   class="offcanvas offcanvas-end d-flex flex-row-reverse"
                   id="navbarSupportedContent"
                 >
-                  <div class="offcanvas-header mt-3" style="height: 30px">
+                  <div
+                    class="offcanvas-header btn-close-bg mt-3"
+                    style="height: 30px"
+                  >
                     <button
                       type="button"
                       class="btn-close"
@@ -101,45 +111,14 @@
       <section>
         <div class="container"></div>
       </section>
-
-      <!-- <section>
-        <div class="">
-          <div class="">
-            <div class="image-container z-2">
-              <img class="" src="img7.jpg" alt="Image 1" />
-              <img class="" src="img1.jpg" alt="Image 2" />
-              <img class="" src="img4.jpg" alt="Image 3" />
-              <img class="" src="img2.jpg" alt="Image 3" />
-              <span class="text-container overflow-hidden">
-                <div class=""></div>
-                <p
-                  class="animated-text animated-text-first bg-info w-50 m-auto"
-                >
-                  EducationPourTous
-                </p>
-                <p
-                  class="animated-text animated-text-second bg-warning w-50 m-auto"
-                >
-                  ÉducationÉquitable
-                </p>
-                <p
-                  class="animated-text animated-text-third bg-success w-50 m-auto"
-                >
-                  EnfantsDuFutur
-                </p>
-              </span>
-            </div>
-          </div>
-        </div>
-      </section> -->
     </header>
     <main class="">
       <section class="bg-light pt-5 pb-5">
         <div class="container" style="padding-left: 30px">
           <div class="pb-5 m-auto">
-            <h5 style="margin-left: -12px">
+            <h1 class="fs-5" style="margin-left: -12px">
               Faire un <strong>don</strong> à notre association
-            </h5>
+            </h1>
           </div>
           <div class="row">
             <div
@@ -158,7 +137,6 @@
                     name="Prénom"
                     required
                   />
-                  <div class="valid-feedback">Looks good!</div>
                 </div>
                 <div class="col-md-4 position-relative">
                   <label for="validationTooltip02" class="form-label"
@@ -171,7 +149,6 @@
                     placeholder="Nom"
                     required
                   />
-                  <div class="valid-tooltip">Looks good!</div>
                 </div>
                 <div class="col-md-4 position-relative">
                   <label for="validationTooltip03" class="form-label"
@@ -192,7 +169,6 @@
                   <label for="validationTooltipUsername" class="form-label"
                     >Mail</label
                   >
-
                   <div class="input-group has-validation">
                     <input
                       type="text"
@@ -202,9 +178,6 @@
                       aria-describedby="validationTooltipUsernamePrepend"
                       required
                     />
-                    <div class="invalid-tooltip">
-                      Please choose a unique and valid username.
-                    </div>
                   </div>
                 </div>
                 <div class="col-md-6 position-relative">
@@ -275,45 +248,11 @@
           </div>
         </div>
       </section>
-      <!-- <section>
-        <div class="container">
-          <form action="/traitement_du_don" method="POST">
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom" required /><br />
-
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required /><br />
-
-            <label for="montant">Montant du don :</label>
-            <input
-              type="number"
-              id="montant"
-              name="montant"
-              step="10.00"
-              required
-            /><br />
-
-            <label for="methode_paiement">Méthode de paiement :</label>
-            <select id="methode_paiement" name="methode_paiement" required>
-              <option selected>Selectionnez un moyen de paiement</option>
-              <option value="carte_credit">Carte de crédit</option>
-              <option value="paypal">PayPal</option>
-              <option value="virement">Virement bancaire</option>
-               Ajoutez d'autres options de paiement si nécessaire </select
-            ><br />
-
-            <label for="message">Message (optionnel) :</label><br />
-            <textarea id="message" name="message" rows="4" cols="50"></textarea
-            ><br />
-
-            <input type="submit" value="Faire un don" />
-          </form>
-        </div>
-      </section> -->
     </main>
     <footer>
-      <section class="bg-light pt-4" style="margin-top: 80px">
-        <div class="container-fluid">
+      <section class="pt-4" style="margin-top: 80px">
+        <div class="container-fluid bg-light">
+          <hr />
           <div class="row">
             <div
               class="col-sm-6 my-auto p-3 justify-content-center d-flex col-md-4"
@@ -444,7 +383,7 @@
                   </div>
                 </div>
               </div>
-              <div class="">
+              <div>
                 <a
                   class="btn btn-outline-success fw-semibold btn-navbar"
                   href="fair-un-don.html"
@@ -455,9 +394,9 @@
             </div>
             <div class="col-sm-6 col-md-4">
               <h5>Contact</h5>
-              <div class="">
+              <div>
                 <address>
-                  <span><strong>Education Pour Tous</strong></span
+                  <span><strong>Aller à l'école</strong></span
                   ><br />
                   <span>0033 0 00 00 00 00</span><br />
                   <span>00 Rue adress</span><br />
@@ -471,7 +410,7 @@
                 <a
                   class="fa-brands text-info fa-linkedin fa-2x m-2"
                   title="LinkedIn"
-                  href="http://"
+                  href="#"
                 ></a>
                 <a
                   class="fa-brands fa-facebook-square fa-2x m-2"
@@ -481,18 +420,20 @@
                 <a
                   class="fa-brands text-danger fa-instagram-square fa-2x m-2"
                   title="Instagram"
-                  href="http://"
+                  href="#"
                 ></a>
                 <a
                   class="fa-brands text-info fa-twitter-square fa-2x m-2"
                   title="Twitter"
-                  href="http://"
+                  href="#"
                 ></a>
               </div>
               <div class="pt-2 content-copirigtht" style="font-size: 5px">
                 <p>
-                  &copy; 2023 educationpourtous. Tous droits réservés.
-                  <a class="" href="http://">Politique de confidentialité</a>.
+                  &copy; 2023 aller-a-lecole. Tous droits réservés.
+                  <a class="text-decoration-none" href="#"
+                    >Politique de confidentialité</a
+                  >.
                 </p>
               </div>
             </div>
